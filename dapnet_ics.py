@@ -123,9 +123,15 @@ for item in items:
 		startdt_local = startdt
 
 	if startdt_local.strftime("%H:%M") == '00:00':
-		start = startdt_local.strftime("%d.%m.%y")
+		if idate == today.date():
+			start = 'HEUTE'
+		else:
+			start = startdt_local.strftime("%d.%m.%y")
 	else:
-		start = startdt_local.strftime("%d.%m.%y %H:%M")
+		if idate == today.date():
+			start = startdt_local.strftime("HEUTE %H:%M")
+		else:
+			start = startdt_local.strftime("%d.%m.%y %H:%M")
 
 	msg = "{0} {1} {2}".format(start, summary, location)
 
