@@ -25,15 +25,15 @@ These scripts will parse external data and push it into a dapnet-rubric
 
 ## cli-arguments
 
-**--local *or* -l** don't send news to dapnet (for testing)
+**--local *or* -l**  don't send news to dapnet (for testing)
 
-**--verbose *or* -v** we will see what happens
+**--verbose *or* -v**  we will see what happens
 
-**--silent *or* -s** we won't see anything
+**--silent *or* -s**  we won't see anything
 
-**--force *or* -f** force an upload even if no new data is present
+**--force *or* -f**  force an upload even if no new data is present
 
-**--json *or* -j**save uploaded data as .json (for checking what has been uploaded)
+**--json *or* -j**  save uploaded data as .json (for checking what has been uploaded)
 
 
 ## dapnet_ics.py
