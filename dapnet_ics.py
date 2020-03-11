@@ -124,12 +124,12 @@ for item in items:
 
 	if startdt_local.strftime("%H:%M") == '00:00':
 		if idate == today.date():
-			start = 'HEUTE'
+			start = '!HEUTE!'
 		else:
 			start = startdt_local.strftime("%d.%m.%y")
 	else:
 		if idate == today.date():
-			start = startdt_local.strftime("HEUTE %H:%M")
+			start = startdt_local.strftime("!HEUTE! %H:%M")
 		else:
 			start = startdt_local.strftime("%d.%m.%y %H:%M")
 
